@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Digital Smart Agency</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+
+    <style>
+        /* 🏢 About Section */
+        .about {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+        .about .container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .about-img {
+            flex: 1;
+            max-width: 50%;
+        }
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .about-text {
+            flex: 1;
+            max-width: 50%;
+            text-align: left;
+        }
+        .about-text h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .about-text h2 {
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        .about-text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .about-text li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .about-text i {
+            color: #ff6600;
+            margin-right: 10px;
+        }
+
+        /* Responsive for smaller screens */
+        @media (max-width: 768px) {
+            .about .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-img, .about-text {
+                max-width: 100%;
+            }
+            .about-text {
+                text-align: center;
+            }
+        }
+
+        /* 📞 Contact Section */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #222;
+            color: white;
+        }
+        .contact a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>    
+
+<body>
+
+    <!-- Load Header -->
+    <div id="header"></div>
+
+    <!-- 🏢 About Section -->
+    <section class="about">
+        <div class="container">
+            <!-- Image Section (50%) -->
+            <div class="about-img">
+                <img src="assets/images/about.png" alt="About Us">
+            </div>
+
+            <!-- Text Section (50%) -->
+            <div class="about-text">
+                <h1>About Us</h1>
+                <p>Welcome to Digital Smart Agency, where innovation meets excellence. We are a creative agency specializing in web development, UI/UX design, branding, and digital marketing.</p>
+
+                <h2>Who We Are</h2>
+                <p>We are a passionate team of developers and designers dedicated to crafting top-notch digital solutions. Our expertise lies in building dynamic websites, designing intuitive user experiences, and helping brands grow online.</p>
+
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Experienced & Creative Team</li>
+                    <li><i class="fas fa-check-circle"></i> Tailor-Made Digital Solutions</li>
+                    <li><i class="fas fa-check-circle"></i> Client-Centric Approach</li>
+                    <li><i class="fas fa-check-circle"></i> Affordable Pricing</li>
+                    <li><i class="fas fa-check-circle"></i> Timely Delivery</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 Contact Section -->
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>Have a project in mind? Let's work together!</p>
+        <p>Email: <a href="mailto:digitalsmartagency.info@gmail.com">digitalsmartagency.info@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918154957669">+91 81549 57669</a></p>
+        <p>WhatsApp: <a href="https://wa.me/918154957669">Chat Now</a></p>
+    </section>
+
+    <!-- Load Footer -->
+    <div id="footer"></div>
+
+    <script>
+        // Function to load external components
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error(`Error loading ${file}:`, error));
+        }
+
+        // Load header and footer
+        document.addEventListener("DOMContentLoaded", function () {
+            loadComponent("header", "header.html");
+            loadComponent("footer", "footer.html");
+        });
+    </script>
+
+</body>
+</html>
