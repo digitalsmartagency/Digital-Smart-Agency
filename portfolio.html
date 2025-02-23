@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Digital Smart Agency</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript -->
+    <script defer src="js/script.js"></script>
+    
+    <style>
+        .portfolio {
+            text-align: center;
+            padding: 60px 20px;
+            background: #f9f9f9;
+        }
+
+        .portfolio-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            max-width: 350px;
+            text-align: center;
+            margin: 10px; /* Adds spacing around each image */
+            padding: 10px; /* Adds internal spacing */
+        }
+
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .portfolio-text {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .portfolio-item:hover .portfolio-text {
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .portfolio-item {
+                width: 90%;
+            }
+        }
+
+        /* 📞 Contact Section */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #222;
+            color: white;
+        }
+        .contact a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"></header>
+    
+    <section class="portfolio">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>Explore our recent projects that highlight our expertise in web development and UI/UX design. From visually stunning interfaces to high-performance websites, we craft digital solutions tailored to meet business needs. Our work reflects innovation, creativity, and a user-centric approach, ensuring seamless experiences for every user.
+                <br>
+                Whether it's custom websites, e-commerce platforms, business portfolios, or interactive web applications, our portfolio showcases a diverse range of projects designed to enhance user engagement and drive success.
+                <br>
+                Take a look at our work and see how Digital Smart Agency can transform your ideas into reality! 🚀</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Amazon/" target="_blank">
+                        <img src="assets/images/img-1.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Amazon</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/COZA-STORE/" target="_blank">
+                        <img src="assets/images/img-2.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">COZA Store</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Capital-Shop/" target="_blank">
+                        <img src="assets/images/img-3.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Capital Shop</div>
+                </div>  
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Band/" target="_blank">
+                        <img src="assets/images/img-4.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Amazon</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Aranoz-Sofa/" target="_blank">
+                        <img src="assets/images/img-5.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">COZA Store</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/MShop/" target="_blank">
+                        <img src="assets/images/img-6.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Capital Shop</div>
+                </div>  
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Stop-Watch/" target="_blank">
+                        <img src="assets/images/img-7.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Amazon</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/TicTacToe-Game/" target="_blank">
+                        <img src="assets/images/img-8.png" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">COZA Store</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Weather-App/" target="_blank">
+                        <img src="assets/images/img-9.PNG" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Capital Shop</div>
+                </div>  
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/EKTA-ENTERPRISE/" target="_blank">
+                        <img src="assets/images/img-10.PNG" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">Amazon</div>
+                </div>   
+                <div class="portfolio-item">
+                    <a href="https://mkhimani452.github.io/Calculator/" target="_blank">
+                        <img src="assets/images/img-11.PNG" alt="Web Design for Startup">
+                    </a>
+                    <div class="portfolio-text">COZA Store</div>
+                </div>    
+            </div>
+            
+        </div>
+    </section>
+    
+ <!-- 📞 Contact Section -->
+<section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Have a project in mind? Let's work together!</p>
+    <p>Email: <a href="mailto:digitalsmartagency.info@gmail.com">digitalsmartagency.info@gmail.com</a></p>
+    <p>Phone: <a href="tel:+918154957669">+91 81549 57669</a>, <a href="tel:+919979280206">+91 99792 80206</a></p>
+    <p>WhatsApp: 
+        <a href="https://wa.me/918154957669?text=Hello%20there!%20I%20am%20interested%20in%20your%20services." target="_blank">Chat Now (+91 81549 57669)</a>,
+        <a href="https://wa.me/919979280206?text=Hello%20there!%20I%20am%20interested%20in%20your%20services." target="_blank">Chat Now (+91 99792 80206)</a>
+    </p>
+</section>
+
+    
+    <footer id="footer"></footer>
+    
+    <script>
+        function loadComponent(id, file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => document.getElementById(id).innerHTML = data)
+                .catch(error => console.error(`Error loading ${file}:`, error));
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loadComponent("header", "header.html");
+            loadComponent("footer", "footer.html");
+        });
+    </script>
+</body>
+</html>
