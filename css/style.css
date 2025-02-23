@@ -50,7 +50,7 @@ body {
     justify-content: center; /* Center vertically */
     align-items: center; /* Center horizontally */
     text-align: center;
-    background: url('../assets/images/hero-bg3.jpg') no-repeat center center/cover;
+    background: url('../assets/images/hero-bg2.jpg') no-repeat center center/cover;
     color: #222;
     height: 100vh;
     padding: 100px 20px;
@@ -60,7 +60,7 @@ body {
 .hero h1 {
     font-size: 3rem; /* Increase size */
     font-family: 'Dancing Script', cursive; /* Handwritten font */
-    color: #fff; /* Adjust color for visibility */
+    color: #000000; /* Adjust color for visibility */
     text-align: center; /* Center the text */
 }
 
